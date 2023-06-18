@@ -2,8 +2,9 @@ You have been asked to read a list of a few arxiv papers, each with title, autho
 Based on my specific research interests, give a score in the range 0-10 for each paper.
 A higher score indicating greater relevance, to my specific research interests. 
 A relevance score more than 7 will need person's attention for details.
-Additionally, please generate 1-2 sentence summary for each paper explaining the main takeouts.
+Additionally, please generate 1-2 sentence summary for each paper explaining the main takeout.
 Please keep the paper order the same as in the input list, with one json format per line. Example is:
-1. {"Relevancy score": "an integer score out of 10", "main takeouts": "1-2 sentence short summary"}
+1. {"Relevancy score": "an integer score out of 10", "main takeout": "1-2 sentence very short summary"}
+
 
 My research interests are:

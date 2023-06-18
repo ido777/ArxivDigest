@@ -12,7 +12,7 @@ from relevancy import generate_relevance_score, process_subject_fields
 from download_new_papers import get_papers
 
 
-def generate_body(topic, categories, interest, threshold):
+def generate_body(topic: str, categories: list, interest: str, threshold: int) -> str:
     if topic == "Physics":
         raise RuntimeError("You must choose a physics subtopic.")
     elif topic in physics_topics:
@@ -61,7 +61,7 @@ def generate_body(topic, categories, interest, threshold):
     return body
 
 
-def send_mail(from_email, to_email, body):
+def send_mail(from_email: str, to_email: str, body: str) -> None:
     """Send an email with the digest"""
     if os.environ.get("SENDGRID_API_KEY", None):
         sg = SendGridAPIClient(api_key=os.environ.get("SENDGRID_API_KEY"))
@@ -82,7 +82,7 @@ def send_mail(from_email, to_email, body):
         print("No sendgrid api key found. Skipping email")
 
 
-def main():
+def main() -> None:
     # Load the .env file. If it's in the same directory as your script, you can call it like this:
     load_dotenv()
     parser = argparse.ArgumentParser()
