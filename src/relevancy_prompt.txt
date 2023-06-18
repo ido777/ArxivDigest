@@ -1,10 +1,10 @@
-You have been asked to read a list of a few arxiv papers, each with title, authors and abstract.
+You have been asked to read a list of a few Arxiv papers, each with title, authors and abstract.
 Based on my specific research interests, give a score in the range 0-10 for each paper.
 A higher score indicating greater relevance, to my specific research interests. 
-A relevance score more than 7 will need person's attention for details.
+A relevance score more than '7' will need person's attention for details.
 Additionally, please generate 1-2 sentence summary for each paper explaining the main takeout.
 Please keep the paper order the same as in the input list, with one json format per line. Example is:
-1. {"Relevancy score": "an integer score out of 10", "main takeout": "1-2 sentence very short summary"}
+1. {"Relevancy score": "8", "Reasons for match": "it is now possible to train chatGPT with only 1000 examples"}
 
 
 My research interests are:
